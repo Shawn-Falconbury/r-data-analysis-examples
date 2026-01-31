@@ -7,31 +7,48 @@ A collection of R scripts demonstrating fundamental data analysis techniques, fo
 ```
 R-Script-Study-Examples/
 ├── README.md
-└── Week-1/
+├── Week-1/
+│   ├── README.md
+│   └── mtcars_exploration.r
+└── Week-2/
     ├── README.md
-    └── mtcars_exploration.r
+    └── r_fundamentals_week2.r
 ```
+
+## Weekly Content
+
+### Week 1: Introduction to R
+- Basic data exploration using the `mtcars` dataset
+- Summary statistics and initial visualization
+
+### Week 2: R Programming Fundamentals
+- Package management and configuration
+- Data structures (vectors, data frames, factors)
+- Data manipulation with tidyverse
+- Data partitioning for machine learning
+- Normalization and standardization
+- Visualization with ggplot2
 
 ## Getting Started
 
 ### Prerequisites
 
-- [R](https://cran.r-project.org/) (version 4.0 or higher recommended)
-- [RStudio](https://posit.co/download/rstudio-desktop/) (optional but recommended)
+Install R and RStudio:
+- R: https://cran.r-project.org/
+- RStudio: https://posit.co/download/rstudio-desktop/
 
-### Running the Scripts
+### Common Packages
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Shawn-Falconbury/R-Script-Study-Examples.git
-   ```
+```r
+# Install core packages
+install.packages("tidyverse")
+install.packages("caret")
+install.packages("scales")
 
-2. Open RStudio and set the working directory to the script location
-
-3. Open and run the desired script using:
-   - Click **Source** button, or
-   - Press `Ctrl+Shift+S`, or
-   - Run line-by-line with `Ctrl+Enter`
+# Install mlba package from GitHub (for textbook datasets)
+install.packages("devtools")
+devtools::install_github("gedeck/mlba/mlba")
+```
 
 ## Coding Standards
 
